@@ -1,0 +1,5 @@
+#!/bin/sh
+
+exec java -Djava.library.path=/home/octopus/R-studio/private-libraries/lib \
+    -Xmx2G \
+    -jar /home/octopus/R-studio/GAM_files/sgmwcs/sgmwcs-solver-0.9.5.jar "$@"

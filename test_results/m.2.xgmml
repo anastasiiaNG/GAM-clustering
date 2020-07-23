@@ -1,0 +1,1037 @@
+<?xml version="1.0"?>
+<graph label="m.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cy="http://www.cytoscape.org" xmlns="http://www.cs.rpi.edu/XGMML">
+  <att name="documentVersion" value="1.1"/>
+  <att name="networkMetadata">
+    <rdf:RDF>
+      <rdf:Description rdf:about="http://www.cytoscape.org/">
+        <dc:type>N/A</dc:type>
+        <dc:description>N/A</dc:description>
+        <dc:identifier>N/A</dc:identifier>
+        <dc:date>2020-07-23 14:24:43</dc:date>
+        <dc:title>m.2</dc:title>
+        <dc:format>Cytoscape-XGMML</dc:format>
+      </rdf:Description>
+    </rdf:RDF>
+  </att>
+  <node label="C00019" id="1">
+    <att type="string" name="name" value="C00019"/>
+    <att type="string" name="label" value="S-Adenosyl-L-methionine"/>
+    <att type="string" name="formula" value="C15H22N6O5S"/>
+    <att type="string" name="pathway" value="map00261+map00270+map00330+map00908+map01060+map01070+map01100+map01110+map01130+map01230+map04122"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00021" id="2">
+    <att type="string" name="name" value="C00021"/>
+    <att type="string" name="label" value="S-Adenosyl-L-homocysteine"/>
+    <att type="string" name="formula" value="C14H20N6O5S"/>
+    <att type="string" name="pathway" value="map00270+map01100+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00025" id="3">
+    <att type="string" name="name" value="C00025"/>
+    <att type="string" name="label" value="L-Glutamate"/>
+    <att type="string" name="formula" value="C5H9NO4"/>
+    <att type="string" name="pathway" value="map00220+map00250+map00330+map00332+map00340+map00430+map00471+map00480+map00524+map00630+map00650+map00660+map00860+map00910+map00970+map01060+map01064+map01100+map01110+map01120+map01130+map01200+map01210+map01230+map02010+map02020+map04068+map04072+map04080+map04540+map04713+map04720+map04721+map04723+map04724+map04727+map04730+map04742+map04964+map04974+map05014+map05016+map05030+map05031+map05033+map05034+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00026" id="4">
+    <att type="string" name="name" value="C00026"/>
+    <att type="string" name="label" value="2-Oxoglutarate"/>
+    <att type="string" name="formula" value="C5H6O5"/>
+    <att type="string" name="pathway" value="map00020+map00040+map00053+map00220+map00250+map00300+map00340+map00365+map00430+map00471+map00630+map00650+map00660+map00720+map01060+map01061+map01062+map01063+map01064+map01065+map01066+map01070+map01100+map01110+map01120+map01130+map01200+map01210+map01230+map04066+map04727+map04922+map04964+map04976+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00037" id="5">
+    <att type="string" name="name" value="C00037"/>
+    <att type="string" name="label" value="Glycine"/>
+    <att type="string" name="formula" value="C2H5NO2"/>
+    <att type="string" name="pathway" value="map00120+map00230+map00260+map00310+map00460+map00480+map00630+map00680+map00730+map00860+map00970+map01060+map01100+map01110+map01120+map01130+map01200+map01230+map01502+map02010+map04080+map04721+map04974+map04978+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00049" id="6">
+    <att type="string" name="name" value="C00049"/>
+    <att type="string" name="label" value="L-Aspartate"/>
+    <att type="string" name="formula" value="C4H7NO4"/>
+    <att type="string" name="pathway" value="map00220+map00250+map00260+map00261+map00270+map00300+map00340+map00410+map00460+map00710+map00760+map00770+map00970+map01060+map01064+map01070+map01100+map01110+map01120+map01130+map01200+map01210+map01230+map02010+map02020+map02030+map04080+map04974+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00058" id="7">
+    <att type="string" name="name" value="C00058"/>
+    <att type="string" name="label" value="Formate"/>
+    <att type="string" name="formula" value="CH2O2"/>
+    <att type="string" name="pathway" value="map00620+map00625+map00630+map00680+map00720+map00910+map01100+map01120+map01200+map01220"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00062" id="8">
+    <att type="string" name="name" value="C00062"/>
+    <att type="string" name="label" value="L-Arginine"/>
+    <att type="string" name="formula" value="C6H14N4O2"/>
+    <att type="string" name="pathway" value="map00220+map00261+map00330+map00331+map00472+map00970+map01060+map01064+map01100+map01110+map01130+map01230+map02010+map04974+map05014+map05132+map05142+map05146+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00064" id="9">
+    <att type="string" name="name" value="C00064"/>
+    <att type="string" name="label" value="L-Glutamine"/>
+    <att type="string" name="formula" value="C5H10N2O3"/>
+    <att type="string" name="pathway" value="map00220+map00230+map00240+map00250+map00471+map00630+map00910+map00970+map01060+map01100+map01120+map01230+map02010+map02020+map04724+map04727+map04964+map04974+map04978+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00065" id="10">
+    <att type="string" name="name" value="C00065"/>
+    <att type="string" name="label" value="L-Serine"/>
+    <att type="string" name="formula" value="C3H7NO3"/>
+    <att type="string" name="pathway" value="map00260+map00261+map00270+map00460+map00600+map00630+map00680+map00920+map00970+map01060+map01100+map01110+map01120+map01130+map01200+map01230+map01502+map02010+map04071+map04974+map04978+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00077" id="11">
+    <att type="string" name="name" value="C00077"/>
+    <att type="string" name="label" value="L-Ornithine"/>
+    <att type="string" name="formula" value="C5H12N2O2"/>
+    <att type="string" name="pathway" value="map00220+map00330+map00472+map00480+map01060+map01064+map01100+map01110+map01130+map01210+map01230+map02010"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00091" id="12">
+    <att type="string" name="name" value="C00091"/>
+    <att type="string" name="label" value="Succinyl-CoA"/>
+    <att type="string" name="formula" value="C25H40N7O19P3S"/>
+    <att type="string" name="pathway" value="map00020+map00280+map00360+map00362+map00623+map00626+map00630+map00640+map00650+map00720+map01060+map01061+map01063+map01064+map01065+map01066+map01070+map01100+map01110+map01120+map01130+map01200+map01220"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00101" id="13">
+    <att type="string" name="name" value="C00101"/>
+    <att type="string" name="label" value="Tetrahydrofolate"/>
+    <att type="string" name="formula" value="C19H23N7O6"/>
+    <att type="string" name="pathway" value="map00260+map00670+map00680+map00720+map00790+map00970+map01100+map01120+map01200"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00117" id="14">
+    <att type="string" name="name" value="C00117"/>
+    <att type="string" name="label" value="D-Ribose 5-phosphate"/>
+    <att type="string" name="formula" value="C5H11O8P"/>
+    <att type="string" name="pathway" value="map00030+map00230+map00710+map01100+map01110+map01120+map01130+map01200+map01230+map04918"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00118" id="15">
+    <att type="string" name="name" value="C00118"/>
+    <att type="string" name="label" value="D-Glyceraldehyde 3-phosphate"/>
+    <att type="string" name="formula" value="C3H7O6P"/>
+    <att type="string" name="pathway" value="map00010+map00030+map00051+map00052+map00331+map00562+map00680+map00710+map00730+map00750+map00900+map01060+map01061+map01062+map01063+map01064+map01065+map01066+map01070+map01100+map01110+map01120+map01130+map01200+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00119" id="16">
+    <att type="string" name="name" value="C00119"/>
+    <att type="string" name="label" value="5-Phospho-alpha-D-ribose 1-diphosphate"/>
+    <att type="string" name="formula" value="C5H13O14P3"/>
+    <att type="string" name="pathway" value="map00030+map00230+map00240+map00340+map00400+map01060+map01065+map01070+map01100+map01110+map01120+map01130+map01200+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00143" id="17">
+    <att type="string" name="name" value="C00143"/>
+    <att type="string" name="label" value="5,10-Methylenetetrahydrofolate"/>
+    <att type="string" name="formula" value="C20H23N7O6"/>
+    <att type="string" name="pathway" value="map00260+map00670+map00680+map00720+map01100+map01120+map01200"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00169" id="18">
+    <att type="string" name="name" value="C00169"/>
+    <att type="string" name="label" value="Carbamoyl phosphate"/>
+    <att type="string" name="formula" value="CH4NO5P"/>
+    <att type="string" name="pathway" value="map00220+map00230+map00240+map00250+map00910+map01100+map01120+map01200+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00170" id="19">
+    <att type="string" name="name" value="C00170"/>
+    <att type="string" name="label" value="5'-Methylthioadenosine"/>
+    <att type="string" name="formula" value="C11H15N5O3S"/>
+    <att type="string" name="pathway" value="map00270+map00908+map01060+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00197" id="20">
+    <att type="string" name="name" value="C00197"/>
+    <att type="string" name="label" value="3-Phospho-D-glycerate"/>
+    <att type="string" name="formula" value="C3H7O7P"/>
+    <att type="string" name="pathway" value="map00010+map00030+map00260+map00561+map00630+map00680+map00710+map01060+map01061+map01062+map01063+map01064+map01065+map01066+map01070+map01100+map01110+map01120+map01130+map01200+map01230+map04922+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00212" id="21">
+    <att type="string" name="name" value="C00212"/>
+    <att type="string" name="label" value="Adenosine"/>
+    <att type="string" name="formula" value="C10H13N5O4"/>
+    <att type="string" name="pathway" value="map00230+map01100+map04022+map04024+map04071+map04080+map04270+map04923+map04924+map05012+map05032+map05034"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00234" id="22">
+    <att type="string" name="name" value="C00234"/>
+    <att type="string" name="label" value="10-Formyltetrahydrofolate"/>
+    <att type="string" name="formula" value="C20H23N7O7"/>
+    <att type="string" name="pathway" value="map00670+map00720+map00970+map01100+map01120+map01200"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00236" id="23">
+    <att type="string" name="name" value="C00236"/>
+    <att type="string" name="label" value="3-Phospho-D-glyceroyl phosphate"/>
+    <att type="string" name="formula" value="C3H8O10P2"/>
+    <att type="string" name="pathway" value="map00010+map00710+map01060+map01061+map01062+map01063+map01100+map01110+map01120+map01130+map01200+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00295" id="24">
+    <att type="string" name="name" value="C00295"/>
+    <att type="string" name="label" value="Orotate"/>
+    <att type="string" name="formula" value="C5H4N2O4"/>
+    <att type="string" name="pathway" value="map00240+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00301" id="25">
+    <att type="string" name="name" value="C00301"/>
+    <att type="string" name="label" value="ADP-ribose"/>
+    <att type="string" name="formula" value="C15H23N5O14P2"/>
+    <att type="string" name="pathway" value="map00230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00311" id="26">
+    <att type="string" name="name" value="C00311"/>
+    <att type="string" name="label" value="Isocitrate"/>
+    <att type="string" name="formula" value="C6H8O7"/>
+    <att type="string" name="pathway" value="map00020+map00630+map00720+map01060+map01061+map01062+map01063+map01064+map01065+map01066+map01070+map01100+map01110+map01120+map01130+map01200+map01210+map01230+map04922+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00337" id="27">
+    <att type="string" name="name" value="C00337"/>
+    <att type="string" name="label" value="(S)-Dihydroorotate"/>
+    <att type="string" name="formula" value="C5H6N2O4"/>
+    <att type="string" name="pathway" value="map00240+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00415" id="28">
+    <att type="string" name="name" value="C00415"/>
+    <att type="string" name="label" value="Dihydrofolate"/>
+    <att type="string" name="formula" value="C19H21N7O6"/>
+    <att type="string" name="pathway" value="map00670+map00790+map01061+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00631" id="29">
+    <att type="string" name="name" value="C00631"/>
+    <att type="string" name="label" value="2-Phospho-D-glycerate"/>
+    <att type="string" name="formula" value="C3H7O7P"/>
+    <att type="string" name="pathway" value="map00010+map00030+map00260+map00680+map01060+map01061+map01062+map01063+map01100+map01110+map01120+map01130+map01200+map01230+map04922+map05230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C01005" id="30">
+    <att type="string" name="name" value="C01005"/>
+    <att type="string" name="label" value="O-Phospho-L-serine"/>
+    <att type="string" name="formula" value="C3H8NO6P"/>
+    <att type="string" name="pathway" value="map00260+map00270+map00680+map00970+map01100+map01120+map01130+map01200+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C01031" id="31">
+    <att type="string" name="name" value="C01031"/>
+    <att type="string" name="label" value="S-Formylglutathione"/>
+    <att type="string" name="formula" value="C11H17N3O7S"/>
+    <att type="string" name="pathway" value="map00680+map01120"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C01165" id="32">
+    <att type="string" name="name" value="C01165"/>
+    <att type="string" name="label" value="L-Glutamate 5-semialdehyde"/>
+    <att type="string" name="formula" value="C5H9NO3"/>
+    <att type="string" name="pathway" value="map00330+map00332+map01100+map01110+map01130+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C03090" id="33">
+    <att type="string" name="name" value="C03090"/>
+    <att type="string" name="label" value="5-Phosphoribosylamine"/>
+    <att type="string" name="formula" value="C5H12NO7P"/>
+    <att type="string" name="pathway" value="map00230+map00250+map01100+map01110+map01130"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C03838" id="34">
+    <att type="string" name="name" value="C03838"/>
+    <att type="string" name="label" value="5'-Phosphoribosylglycinamide"/>
+    <att type="string" name="formula" value="C7H15N2O8P"/>
+    <att type="string" name="pathway" value="map00230+map01100+map01110+map01130"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C04188" id="35">
+    <att type="string" name="name" value="C04188"/>
+    <att type="string" name="label" value="S-Methyl-5-thio-D-ribose 1-phosphate"/>
+    <att type="string" name="formula" value="C6H13O7PS"/>
+    <att type="string" name="pathway" value="map00270+map01060+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C04582" id="36">
+    <att type="string" name="name" value="C04582"/>
+    <att type="string" name="label" value="S-Methyl-5-thio-D-ribulose 1-phosphate"/>
+    <att type="string" name="formula" value="C6H13O7PS"/>
+    <att type="string" name="pathway" value="map00270+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C15606" id="37">
+    <att type="string" name="name" value="C15606"/>
+    <att type="string" name="label" value="1,2-Dihydroxy-5-(methylthio)pent-1-en-3-one"/>
+    <att type="string" name="formula" value="C6H10O3S"/>
+    <att type="string" name="pathway" value="map00270+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C02987" id="38">
+    <att type="string" name="name" value="C02987"/>
+    <att type="string" name="label" value="L-Glutamyl-tRNA(Glu)"/>
+    <att type="string" name="formula" value="C20H28N6O13PR(C5H8O6PR)n"/>
+    <att type="string" name="pathway" value="map00860+map00970+map01100+map01110"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C03287" id="39">
+    <att type="string" name="name" value="C03287"/>
+    <att type="string" name="label" value="L-Glutamyl 5-phosphate"/>
+    <att type="string" name="formula" value="C5H10NO7P"/>
+    <att type="string" name="pathway" value="map00330+map00332+map01100+map01110+map01130+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C00438" id="40">
+    <att type="string" name="name" value="C00438"/>
+    <att type="string" name="label" value="N-Carbamoyl-L-aspartate"/>
+    <att type="string" name="formula" value="C5H8N2O5"/>
+    <att type="string" name="pathway" value="map00240+map00250+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C02984" id="41">
+    <att type="string" name="name" value="C02984"/>
+    <att type="string" name="label" value="L-Aspartyl-tRNA(Asp)"/>
+    <att type="string" name="formula" value="C14H22NO13PR2(C5H8O6PR)n"/>
+    <att type="string" name="pathway" value="map00970"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C04823" id="42">
+    <att type="string" name="name" value="C04823"/>
+    <att type="string" name="label" value="1-(5'-Phosphoribosyl)-5-amino-4-(N-succinocarboxamide)-imidazole"/>
+    <att type="string" name="formula" value="C13H19N4O12P"/>
+    <att type="string" name="pathway" value="map00230+map01100+map01110+map01130"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C02163" id="43">
+    <att type="string" name="name" value="C02163"/>
+    <att type="string" name="label" value="L-Arginyl-tRNA(Arg)"/>
+    <att type="string" name="formula" value="C21H33N9O11PR(C5H8O6PR)n"/>
+    <att type="string" name="pathway" value="map00970"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C03232" id="44">
+    <att type="string" name="name" value="C03232"/>
+    <att type="string" name="label" value="3-Phosphonooxypyruvate"/>
+    <att type="string" name="formula" value="C3H5O7P"/>
+    <att type="string" name="pathway" value="map00260+map00680+map01100+map01120+map01130+map01200+map01230"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C01103" id="45">
+    <att type="string" name="name" value="C01103"/>
+    <att type="string" name="label" value="Orotidine 5'-phosphate"/>
+    <att type="string" name="formula" value="C10H13N2O11P"/>
+    <att type="string" name="pathway" value="map00240+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C14180" id="46">
+    <att type="string" name="name" value="C14180"/>
+    <att type="string" name="label" value="S-(Hydroxymethyl)glutathione"/>
+    <att type="string" name="formula" value="C11H19N3O7S"/>
+    <att type="string" name="pathway" value="map00680+map01120"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <node label="C15650" id="47">
+    <att type="string" name="name" value="C15650"/>
+    <att type="string" name="label" value="2,3-Diketo-5-methylthiopentyl-1-phosphate"/>
+    <att type="string" name="formula" value="C6H11O6PS"/>
+    <att type="string" name="pathway" value="map00270+map01100"/>
+    <att type="string" name="nodeType" value="met"/>
+    <att type="real" name="score" value="-0.01"/>
+  </node>
+  <edge label="C00019 (pp) C00021" source="1" target="2">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.585544068018753"/>
+    <att type="string" name="rxn" value="R03938"/>
+    <att type="string" name="rpair" value="RP00004"/>
+    <att type="string" name="gene" value="20937"/>
+    <att type="string" name="origin" value="20937"/>
+    <att type="real" name="score" value="0.772150342914643"/>
+    <att type="real" name="log2FC" value="0.772150342914643"/>
+    <att type="string" name="symbol" value="Suv39h1"/>
+    <att type="string" name="label" value="Suv39h1"/>
+    <att type="string" name="pathway" value=""/>
+    <att type="real" name="logPval" value="-0.53521383315968"/>
+  </edge>
+  <edge label="C00019 (pp) C00170" source="1" target="19">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.55848483142576"/>
+    <att type="string" name="rxn" value="R10455"/>
+    <att type="string" name="rpair" value="RP00058"/>
+    <att type="string" name="gene" value="116905"/>
+    <att type="string" name="origin" value="116905"/>
+    <att type="real" name="score" value="-0.640144113427618"/>
+    <att type="real" name="log2FC" value="-0.640144113427618"/>
+    <att type="string" name="symbol" value="Dph1"/>
+    <att type="string" name="label" value="Dph1"/>
+    <att type="string" name="pathway" value=""/>
+    <att type="real" name="logPval" value="0.443714087374399"/>
+  </edge>
+  <edge label="C00021 (pp) C00212" source="2" target="21">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.416283046256148"/>
+    <att type="string" name="rxn" value="R00192"/>
+    <att type="string" name="rpair" value="RP04112"/>
+    <att type="string" name="gene" value="269378"/>
+    <att type="string" name="origin" value="269378"/>
+    <att type="real" name="score" value="1.26436329110594"/>
+    <att type="real" name="log2FC" value="1.26436329110594"/>
+    <att type="string" name="symbol" value="Ahcy"/>
+    <att type="string" name="label" value="Ahcy"/>
+    <att type="string" name="pathway" value="rn00270+rn01100"/>
+    <att type="real" name="logPval" value="-0.876389850433575"/>
+  </edge>
+  <edge label="C00025 (pp) C00026" source="3" target="4">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.484098363617187"/>
+    <att type="string" name="rxn" value="R04173"/>
+    <att type="string" name="rpair" value="RP00014"/>
+    <att type="string" name="gene" value="107272"/>
+    <att type="string" name="origin" value="107272"/>
+    <att type="real" name="score" value="1.04662787737804"/>
+    <att type="real" name="log2FC" value="1.04662787737804"/>
+    <att type="string" name="symbol" value="Psat1"/>
+    <att type="string" name="label" value="Psat1"/>
+    <att type="string" name="pathway" value="rn00260+rn00680+rn01100+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.725467162300026"/>
+  </edge>
+  <edge label="C00025 (pp) C00064" source="3" target="9">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.407482069405633"/>
+    <att type="string" name="rxn" value="R00256"/>
+    <att type="string" name="rpair" value="RP00024"/>
+    <att type="string" name="gene" value="51797"/>
+    <att type="string" name="origin" value="51797"/>
+    <att type="real" name="score" value="1.29519151762638"/>
+    <att type="real" name="log2FC" value="1.29519151762638"/>
+    <att type="string" name="symbol" value="Ctps"/>
+    <att type="string" name="label" value="Ctps"/>
+    <att type="string" name="pathway" value="rn00220+rn00250+rn00471+rn01100"/>
+    <att type="real" name="logPval" value="-0.897758348727881"/>
+  </edge>
+  <edge label="C00025 (pp) C00415" source="3" target="28">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.52049948670661"/>
+    <att type="string" name="rxn" value="R02237"/>
+    <att type="string" name="rpair" value="RP02060"/>
+    <att type="string" name="gene" value="14287"/>
+    <att type="string" name="origin" value="14287"/>
+    <att type="real" name="score" value="-0.604545329340791"/>
+    <att type="real" name="log2FC" value="-0.604545329340791"/>
+    <att type="string" name="symbol" value="Fpgs"/>
+    <att type="string" name="label" value="Fpgs"/>
+    <att type="string" name="pathway" value="rn00790+rn01100"/>
+    <att type="real" name="logPval" value="0.419038890553253"/>
+  </edge>
+  <edge label="C00025 (pp) C02987" source="3" target="38">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.274147792982592"/>
+    <att type="string" name="rxn" value="R05578"/>
+    <att type="string" name="rpair" value="RP05173"/>
+    <att type="string" name="gene" value="107508"/>
+    <att type="string" name="origin" value="107508"/>
+    <att type="real" name="score" value="1.86697423557286"/>
+    <att type="real" name="log2FC" value="1.86697423557286"/>
+    <att type="string" name="symbol" value="Eprs"/>
+    <att type="string" name="label" value="Eprs"/>
+    <att type="string" name="pathway" value="rn00860+rn00970+rn01100+rn01110"/>
+    <att type="real" name="logPval" value="-1.29408792756539"/>
+  </edge>
+  <edge label="C00025 (pp) C03287" source="3" target="39">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.02507685518887"/>
+    <att type="string" name="rxn" value="R00239"/>
+    <att type="string" name="rpair" value="RP04397"/>
+    <att type="string" name="gene" value="56454"/>
+    <att type="string" name="origin" value="56454"/>
+    <att type="real" name="score" value="-0.0357320799191949"/>
+    <att type="real" name="log2FC" value="-0.0357320799191949"/>
+    <att type="string" name="symbol" value="Aldh18a1"/>
+    <att type="string" name="label" value="Aldh18a1"/>
+    <att type="string" name="pathway" value="rn00330+rn00332+rn01100+rn01130+rn01230"/>
+    <att type="real" name="logPval" value="0.0247675904515326"/>
+  </edge>
+  <edge label="C00026 (pp) C00091" source="4" target="12">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.816026077575345"/>
+    <att type="string" name="rxn" value="R08549"/>
+    <att type="string" name="rpair" value="RP00304"/>
+    <att type="string" name="gene" value="13382"/>
+    <att type="string" name="origin" value="13382"/>
+    <att type="real" name="score" value="0.293312838049069"/>
+    <att type="real" name="log2FC" value="0.293312838049069"/>
+    <att type="string" name="symbol" value="Dld"/>
+    <att type="string" name="label" value="Dld"/>
+    <att type="string" name="pathway" value="rn01100+rn01110+rn01130+rn01200"/>
+    <att type="real" name="logPval" value="-0.203308966715748"/>
+  </edge>
+  <edge label="C00026 (pp) C00311" source="4" target="26">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.436599585733556"/>
+    <att type="string" name="rxn" value="R00709"/>
+    <att type="string" name="rpair" value="RP00305"/>
+    <att type="string" name="gene" value="67834"/>
+    <att type="string" name="origin" value="67834"/>
+    <att type="real" name="score" value="1.19561733345565"/>
+    <att type="real" name="log2FC" value="1.19561733345565"/>
+    <att type="string" name="symbol" value="Idh3a"/>
+    <att type="string" name="label" value="Idh3a"/>
+    <att type="string" name="pathway" value="rn00020+rn01100+rn01110+rn01120+rn01130+rn01200+rn01210+rn01230"/>
+    <att type="real" name="logPval" value="-0.828738783713386"/>
+  </edge>
+  <edge label="C00037 (pp) C00065" source="5" target="10">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.752331697158264"/>
+    <att type="string" name="rxn" value="R09099"/>
+    <att type="string" name="rpair" value="RP00301"/>
+    <att type="string" name="gene" value="108037"/>
+    <att type="string" name="origin" value="108037"/>
+    <att type="real" name="score" value="0.410559219769021"/>
+    <att type="real" name="log2FC" value="0.410559219769021"/>
+    <att type="string" name="symbol" value="Shmt2"/>
+    <att type="string" name="label" value="Shmt2"/>
+    <att type="string" name="pathway" value="rn00680+rn01120"/>
+    <att type="real" name="logPval" value="-0.284577965635788"/>
+  </edge>
+  <edge label="C00037 (pp) C03838" source="5" target="34">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.504643913477372"/>
+    <att type="string" name="rxn" value="R04144"/>
+    <att type="string" name="rpair" value="RP03774"/>
+    <att type="string" name="gene" value="14450"/>
+    <att type="string" name="origin" value="14450"/>
+    <att type="real" name="score" value="0.986662341606303"/>
+    <att type="real" name="log2FC" value="0.986662341606303"/>
+    <att type="string" name="symbol" value="Gart"/>
+    <att type="string" name="label" value="Gart"/>
+    <att type="string" name="pathway" value="rn00230+rn01100+rn01110+rn01130"/>
+    <att type="real" name="logPval" value="-0.683902220249082"/>
+  </edge>
+  <edge label="C00049 (pp) C00438" source="6" target="40">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.971721922535248"/>
+    <att type="string" name="rxn" value="R01397"/>
+    <att type="string" name="rpair" value="RP00423"/>
+    <att type="string" name="gene" value="69719"/>
+    <att type="string" name="origin" value="69719"/>
+    <att type="real" name="score" value="0.0413845777403041"/>
+    <att type="real" name="log2FC" value="0.0413845777403041"/>
+    <att type="string" name="symbol" value="Cad"/>
+    <att type="string" name="label" value="Cad"/>
+    <att type="string" name="pathway" value="rn00240+rn00250+rn01100"/>
+    <att type="real" name="logPval" value="-0.0286856033793556"/>
+  </edge>
+  <edge label="C00049 (pp) C02984" source="6" target="41">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.278467816764648"/>
+    <att type="string" name="rxn" value="R05577"/>
+    <att type="string" name="rpair" value="RP05171"/>
+    <att type="string" name="gene" value="226414"/>
+    <att type="string" name="origin" value="226414"/>
+    <att type="real" name="score" value="1.84441749363082"/>
+    <att type="real" name="log2FC" value="1.84441749363082"/>
+    <att type="string" name="symbol" value="Dars"/>
+    <att type="string" name="label" value="Dars"/>
+    <att type="string" name="pathway" value="rn00970"/>
+    <att type="real" name="logPval" value="-1.27845278548564"/>
+  </edge>
+  <edge label="C00049 (pp) C04823" source="6" target="42">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.273268434833017"/>
+    <att type="string" name="rxn" value="R04591"/>
+    <att type="string" name="rpair" value="RP04240"/>
+    <att type="string" name="gene" value="67054"/>
+    <att type="string" name="origin" value="67054"/>
+    <att type="real" name="score" value="1.87160927073742"/>
+    <att type="real" name="log2FC" value="1.87160927073742"/>
+    <att type="string" name="symbol" value="Paics"/>
+    <att type="string" name="label" value="Paics"/>
+    <att type="string" name="pathway" value="rn00230+rn01100+rn01110+rn01130"/>
+    <att type="real" name="logPval" value="-1.2973006891215"/>
+  </edge>
+  <edge label="C00058 (pp) C00234" source="7" target="22">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.576313808404966"/>
+    <att type="string" name="rxn" value="R00943"/>
+    <att type="string" name="rpair" value="RP00300"/>
+    <att type="string" name="gene" value="108156"/>
+    <att type="string" name="origin" value="108156"/>
+    <att type="real" name="score" value="0.795073507960425"/>
+    <att type="real" name="log2FC" value="0.795073507960425"/>
+    <att type="string" name="symbol" value="Mthfd1"/>
+    <att type="string" name="label" value="Mthfd1"/>
+    <att type="string" name="pathway" value="rn00670+rn00720+rn01100+rn01120+rn01200"/>
+    <att type="real" name="logPval" value="-0.551102960380674"/>
+  </edge>
+  <edge label="C00058 (pp) C01031" source="7" target="31">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.63536945621607"/>
+    <att type="string" name="rxn" value="R00527"/>
+    <att type="string" name="rpair" value="RP00959"/>
+    <att type="string" name="gene" value="13885"/>
+    <att type="string" name="origin" value="13885"/>
+    <att type="real" name="score" value="-0.709616600517335"/>
+    <att type="real" name="log2FC" value="-0.709616600517335"/>
+    <att type="string" name="symbol" value="Esd"/>
+    <att type="string" name="label" value="Esd"/>
+    <att type="string" name="pathway" value="rn00680+rn01120+rn01200"/>
+    <att type="real" name="logPval" value="0.491868745927124"/>
+  </edge>
+  <edge label="C00058 (pp) C15606" source="7" target="37">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.12248539219661"/>
+    <att type="string" name="rxn" value="R07364"/>
+    <att type="string" name="rpair" value="RP12321"/>
+    <att type="string" name="gene" value="104923"/>
+    <att type="string" name="origin" value="104923"/>
+    <att type="real" name="score" value="-0.166696670140023"/>
+    <att type="real" name="log2FC" value="-0.166696670140023"/>
+    <att type="string" name="symbol" value="Adi1"/>
+    <att type="string" name="label" value="Adi1"/>
+    <att type="string" name="pathway" value="rn00270+rn01100"/>
+    <att type="real" name="logPval" value="0.115545326916288"/>
+  </edge>
+  <edge label="C00062 (pp) C00077" source="8" target="11">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.90273309858779"/>
+    <att type="string" name="rxn" value="R01686"/>
+    <att type="string" name="rpair" value="RP00066"/>
+    <att type="string" name="gene" value="67092"/>
+    <att type="string" name="origin" value="67092"/>
+    <att type="real" name="score" value="-0.928073205148959"/>
+    <att type="real" name="log2FC" value="-0.928073205148959"/>
+    <att type="string" name="symbol" value="Gatm"/>
+    <att type="string" name="label" value="Gatm"/>
+    <att type="string" name="pathway" value="rn00430"/>
+    <att type="real" name="logPval" value="0.643291325502232"/>
+  </edge>
+  <edge label="C00062 (pp) C02163" source="8" target="43">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.428063300754523"/>
+    <att type="string" name="rxn" value="R03646"/>
+    <att type="string" name="rpair" value="RP03259"/>
+    <att type="string" name="gene" value="104458"/>
+    <att type="string" name="origin" value="104458"/>
+    <att type="real" name="score" value="1.22410394094327"/>
+    <att type="real" name="log2FC" value="1.22410394094327"/>
+    <att type="string" name="symbol" value="Rars"/>
+    <att type="string" name="label" value="Rars"/>
+    <att type="string" name="pathway" value="rn00970"/>
+    <att type="real" name="logPval" value="-0.848484195377148"/>
+  </edge>
+  <edge label="C00064 (pp) C00169" source="9" target="18">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.971721922535248"/>
+    <att type="string" name="rxn" value="R00575"/>
+    <att type="string" name="rpair" value="RP06217"/>
+    <att type="string" name="gene" value="69719"/>
+    <att type="string" name="origin" value="69719"/>
+    <att type="real" name="score" value="0.0413845777403041"/>
+    <att type="real" name="log2FC" value="0.0413845777403041"/>
+    <att type="string" name="symbol" value="Cad"/>
+    <att type="string" name="label" value="Cad"/>
+    <att type="string" name="pathway" value="rn00240+rn00250+rn01100"/>
+    <att type="real" name="logPval" value="-0.0286856033793556"/>
+  </edge>
+  <edge label="C00064 (pp) C03090" source="9" target="33">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.679118876972793"/>
+    <att type="string" name="rxn" value="R01072"/>
+    <att type="string" name="rpair" value="RP06429"/>
+    <att type="string" name="gene" value="231327"/>
+    <att type="string" name="origin" value="231327"/>
+    <att type="real" name="score" value="0.558263960464805"/>
+    <att type="real" name="log2FC" value="0.558263960464805"/>
+    <att type="string" name="symbol" value="Ppat"/>
+    <att type="string" name="label" value="Ppat"/>
+    <att type="string" name="pathway" value="rn00230+rn00250+rn01100+rn01110+rn01130"/>
+    <att type="real" name="logPval" value="-0.386959090204408"/>
+  </edge>
+  <edge label="C00065 (pp) C01005" source="10" target="30">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.899088623201773"/>
+    <att type="string" name="rxn" value="R00582"/>
+    <att type="string" name="rpair" value="RP00513"/>
+    <att type="string" name="gene" value="100678"/>
+    <att type="string" name="origin" value="100678"/>
+    <att type="real" name="score" value="0.153464765630286"/>
+    <att type="real" name="log2FC" value="0.153464765630286"/>
+    <att type="string" name="symbol" value="Psph"/>
+    <att type="string" name="label" value="Psph"/>
+    <att type="string" name="pathway" value="rn00260+rn00680+rn01100+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.106373669611926"/>
+  </edge>
+  <edge label="C00077 (pp) C01165" source="11" target="32">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.918998167146792"/>
+    <att type="string" name="rxn" value="R01343"/>
+    <att type="string" name="rpair" value="RP00578"/>
+    <att type="string" name="gene" value="18242"/>
+    <att type="string" name="origin" value="18242"/>
+    <att type="real" name="score" value="0.121866110686295"/>
+    <att type="real" name="log2FC" value="0.121866110686295"/>
+    <att type="string" name="symbol" value="Oat"/>
+    <att type="string" name="label" value="Oat"/>
+    <att type="string" name="pathway" value=""/>
+    <att type="real" name="logPval" value="-0.0844711510280119"/>
+  </edge>
+  <edge label="C00101 (pp) C00234" source="13" target="22">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.473741283266499"/>
+    <att type="string" name="rxn" value="R04560"/>
+    <att type="string" name="rpair" value="RP00072"/>
+    <att type="string" name="gene" value="108147"/>
+    <att type="string" name="origin" value="108147"/>
+    <att type="real" name="score" value="1.07782869662503"/>
+    <att type="real" name="log2FC" value="1.07782869662503"/>
+    <att type="string" name="symbol" value="Atic"/>
+    <att type="string" name="label" value="Atic"/>
+    <att type="string" name="pathway" value="rn00230+rn00670+rn01100+rn01110+rn01130"/>
+    <att type="real" name="logPval" value="-0.747093922192242"/>
+  </edge>
+  <edge label="C00101 (pp) C00415" source="13" target="28">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.403582019426507"/>
+    <att type="string" name="rxn" value="R00939"/>
+    <att type="string" name="rpair" value="RP00296"/>
+    <att type="string" name="gene" value="13361"/>
+    <att type="string" name="origin" value="13361"/>
+    <att type="real" name="score" value="1.30906619463055"/>
+    <att type="real" name="log2FC" value="1.30906619463055"/>
+    <att type="string" name="symbol" value="Dhfr"/>
+    <att type="string" name="label" value="Dhfr"/>
+    <att type="string" name="pathway" value="rn00670+rn00790+rn01100"/>
+    <att type="real" name="logPval" value="-0.907375541974504"/>
+  </edge>
+  <edge label="C00117 (pp) C00119" source="14" target="16">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.508876104871015"/>
+    <att type="string" name="rxn" value="R01049"/>
+    <att type="string" name="rpair" value="RP01255"/>
+    <att type="string" name="gene" value="19139"/>
+    <att type="string" name="origin" value="19139"/>
+    <att type="real" name="score" value="0.974613646141426"/>
+    <att type="real" name="log2FC" value="0.974613646141426"/>
+    <att type="string" name="symbol" value="Prps1"/>
+    <att type="string" name="label" value="Prps1"/>
+    <att type="string" name="pathway" value="rn00030+rn00230+rn01100+rn01110+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.675550700958178"/>
+  </edge>
+  <edge label="C00117 (pp) C00301" source="14" target="25">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.355821181693518"/>
+    <att type="string" name="rxn" value="R01054"/>
+    <att type="string" name="rpair" value="RP00384"/>
+    <att type="string" name="gene" value="53893"/>
+    <att type="string" name="origin" value="53893"/>
+    <att type="real" name="score" value="1.4907756994745"/>
+    <att type="real" name="log2FC" value="1.4907756994745"/>
+    <att type="string" name="symbol" value="Nudt5"/>
+    <att type="string" name="label" value="Nudt5"/>
+    <att type="string" name="pathway" value="rn00230"/>
+    <att type="real" name="logPval" value="-1.03332697293803"/>
+  </edge>
+  <edge label="C00118 (pp) C00236" source="15" target="23">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.758508201314528"/>
+    <att type="string" name="rxn" value="R01061"/>
+    <att type="string" name="rpair" value="RP00395"/>
+    <att type="string" name="gene" value="14433"/>
+    <att type="string" name="origin" value="14433"/>
+    <att type="real" name="score" value="0.398763315295961"/>
+    <att type="real" name="log2FC" value="0.398763315295961"/>
+    <att type="string" name="symbol" value="Gapdh"/>
+    <att type="string" name="label" value="Gapdh"/>
+    <att type="string" name="pathway" value="rn00010+rn00710+rn01100+rn01110+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.276401667708132"/>
+  </edge>
+  <edge label="C00119 (pp) C03090" source="16" target="33">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.679118876972793"/>
+    <att type="string" name="rxn" value="R01072"/>
+    <att type="string" name="rpair" value="RP01278"/>
+    <att type="string" name="gene" value="231327"/>
+    <att type="string" name="origin" value="231327"/>
+    <att type="real" name="score" value="0.558263960464805"/>
+    <att type="real" name="log2FC" value="0.558263960464805"/>
+    <att type="string" name="symbol" value="Ppat"/>
+    <att type="string" name="label" value="Ppat"/>
+    <att type="string" name="pathway" value="rn00230+rn00250+rn01100+rn01110+rn01130"/>
+    <att type="real" name="logPval" value="-0.386959090204408"/>
+  </edge>
+  <edge label="C00143 (pp) C00415" source="17" target="28">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.593853654704942"/>
+    <att type="string" name="rxn" value="R02101"/>
+    <att type="string" name="rpair" value="RP00615"/>
+    <att type="string" name="gene" value="22171"/>
+    <att type="string" name="origin" value="22171"/>
+    <att type="real" name="score" value="0.751820648110865"/>
+    <att type="real" name="log2FC" value="0.751820648110865"/>
+    <att type="string" name="symbol" value="Tyms"/>
+    <att type="string" name="label" value="Tyms"/>
+    <att type="string" name="pathway" value="rn00240+rn00670+rn01100"/>
+    <att type="real" name="logPval" value="-0.521122362524797"/>
+  </edge>
+  <edge label="C00169 (pp) C00438" source="18" target="40">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.971721922535248"/>
+    <att type="string" name="rxn" value="R01397"/>
+    <att type="string" name="rpair" value="RP01480"/>
+    <att type="string" name="gene" value="69719"/>
+    <att type="string" name="origin" value="69719"/>
+    <att type="real" name="score" value="0.0413845777403041"/>
+    <att type="real" name="log2FC" value="0.0413845777403041"/>
+    <att type="string" name="symbol" value="Cad"/>
+    <att type="string" name="label" value="Cad"/>
+    <att type="string" name="pathway" value="rn00240+rn00250+rn01100"/>
+    <att type="real" name="logPval" value="-0.0286856033793556"/>
+  </edge>
+  <edge label="C00170 (pp) C04188" source="19" target="35">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.660025054490765"/>
+    <att type="string" name="rxn" value="R01402"/>
+    <att type="string" name="rpair" value="RP01484"/>
+    <att type="string" name="gene" value="66902"/>
+    <att type="string" name="origin" value="66902"/>
+    <att type="real" name="score" value="0.599407304804876"/>
+    <att type="real" name="log2FC" value="0.599407304804876"/>
+    <att type="string" name="symbol" value="Mtap"/>
+    <att type="string" name="label" value="Mtap"/>
+    <att type="string" name="pathway" value="rn00270+rn01100"/>
+    <att type="real" name="logPval" value="-0.415477483332536"/>
+  </edge>
+  <edge label="C00197 (pp) C00236" source="20" target="23">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.526283015235515"/>
+    <att type="string" name="rxn" value="R01512"/>
+    <att type="string" name="rpair" value="RP00113"/>
+    <att type="string" name="gene" value="18655"/>
+    <att type="string" name="origin" value="18655"/>
+    <att type="real" name="score" value="0.926089259492159"/>
+    <att type="real" name="log2FC" value="0.926089259492159"/>
+    <att type="string" name="symbol" value="Pgk1"/>
+    <att type="string" name="label" value="Pgk1"/>
+    <att type="string" name="pathway" value="rn00010+rn00710+rn01100+rn01110+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.641916159163838"/>
+  </edge>
+  <edge label="C00197 (pp) C00631" source="20" target="29">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.760713649355096"/>
+    <att type="string" name="rxn" value="R01518"/>
+    <att type="string" name="rpair" value="RP01568"/>
+    <att type="string" name="gene" value="18648"/>
+    <att type="string" name="origin" value="18648"/>
+    <att type="real" name="score" value="0.394574603575168"/>
+    <att type="real" name="log2FC" value="0.394574603575168"/>
+    <att type="string" name="symbol" value="Pgam1"/>
+    <att type="string" name="label" value="Pgam1"/>
+    <att type="string" name="pathway" value="rn00010+rn00260+rn00680+rn01100+rn01110+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.273498273988686"/>
+  </edge>
+  <edge label="C00197 (pp) C03232" source="20" target="44">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.50604263075439"/>
+    <att type="string" name="rxn" value="R01513"/>
+    <att type="string" name="rpair" value="RP01565"/>
+    <att type="string" name="gene" value="236539"/>
+    <att type="string" name="origin" value="236539"/>
+    <att type="real" name="score" value="-0.590762608195416"/>
+    <att type="real" name="log2FC" value="-0.590762608195416"/>
+    <att type="string" name="symbol" value="Phgdh"/>
+    <att type="string" name="label" value="Phgdh"/>
+    <att type="string" name="pathway" value="rn00260+rn00680+rn01100+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="0.409485436250892"/>
+  </edge>
+  <edge label="C00295 (pp) C00337" source="24" target="27">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.34186136131364"/>
+    <att type="string" name="rxn" value="R01868"/>
+    <att type="string" name="rpair" value="RP00141"/>
+    <att type="string" name="gene" value="56749"/>
+    <att type="string" name="origin" value="56749"/>
+    <att type="real" name="score" value="-0.424235622598126"/>
+    <att type="real" name="log2FC" value="-0.424235622598126"/>
+    <att type="string" name="symbol" value="Dhodh"/>
+    <att type="string" name="label" value="Dhodh"/>
+    <att type="string" name="pathway" value="rn00240+rn01100"/>
+    <att type="real" name="logPval" value="0.294057725696984"/>
+  </edge>
+  <edge label="C00295 (pp) C01103" source="24" target="45">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.704511784394752"/>
+    <att type="string" name="rxn" value="R01870"/>
+    <att type="string" name="rpair" value="RP01810"/>
+    <att type="string" name="gene" value="22247"/>
+    <att type="string" name="origin" value="22247"/>
+    <att type="real" name="score" value="0.505304256137153"/>
+    <att type="real" name="log2FC" value="0.505304256137153"/>
+    <att type="string" name="symbol" value="Umps"/>
+    <att type="string" name="label" value="Umps"/>
+    <att type="string" name="pathway" value="rn00240+rn01100"/>
+    <att type="real" name="logPval" value="-0.350250220466408"/>
+  </edge>
+  <edge label="C00337 (pp) C00438" source="27" target="40">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.971721922535248"/>
+    <att type="string" name="rxn" value="R01993"/>
+    <att type="string" name="rpair" value="RP01895"/>
+    <att type="string" name="gene" value="69719"/>
+    <att type="string" name="origin" value="69719"/>
+    <att type="real" name="score" value="0.0413845777403041"/>
+    <att type="real" name="log2FC" value="0.0413845777403041"/>
+    <att type="string" name="symbol" value="Cad"/>
+    <att type="string" name="label" value="Cad"/>
+    <att type="string" name="pathway" value="rn00240+rn01100"/>
+    <att type="real" name="logPval" value="-0.0286856033793556"/>
+  </edge>
+  <edge label="C01005 (pp) C03232" source="30" target="44">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.484098363617187"/>
+    <att type="string" name="rxn" value="R04173"/>
+    <att type="string" name="rpair" value="RP03806"/>
+    <att type="string" name="gene" value="107272"/>
+    <att type="string" name="origin" value="107272"/>
+    <att type="real" name="score" value="1.04662787737804"/>
+    <att type="real" name="log2FC" value="1.04662787737804"/>
+    <att type="string" name="symbol" value="Psat1"/>
+    <att type="string" name="label" value="Psat1"/>
+    <att type="string" name="pathway" value="rn00260+rn00680+rn01100+rn01120+rn01130+rn01200+rn01230"/>
+    <att type="real" name="logPval" value="-0.725467162300026"/>
+  </edge>
+  <edge label="C01031 (pp) C14180" source="31" target="46">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.40465035917165"/>
+    <att type="string" name="rxn" value="R07140"/>
+    <att type="string" name="rpair" value="RP10132"/>
+    <att type="string" name="gene" value="11532"/>
+    <att type="string" name="origin" value="11532"/>
+    <att type="real" name="score" value="1.30525221887118"/>
+    <att type="real" name="log2FC" value="1.30525221887118"/>
+    <att type="string" name="symbol" value="Adh5"/>
+    <att type="string" name="label" value="Adh5"/>
+    <att type="string" name="pathway" value=""/>
+    <att type="real" name="logPval" value="-0.904731895430168"/>
+  </edge>
+  <edge label="C01165 (pp) C03287" source="32" target="39">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.02507685518887"/>
+    <att type="string" name="rxn" value="R03313"/>
+    <att type="string" name="rpair" value="RP02934"/>
+    <att type="string" name="gene" value="56454"/>
+    <att type="string" name="origin" value="56454"/>
+    <att type="real" name="score" value="-0.0357320799191949"/>
+    <att type="real" name="log2FC" value="-0.0357320799191949"/>
+    <att type="string" name="symbol" value="Aldh18a1"/>
+    <att type="string" name="label" value="Aldh18a1"/>
+    <att type="string" name="pathway" value="rn00330+rn00332+rn01100+rn01110+rn01130+rn01230"/>
+    <att type="real" name="logPval" value="0.0247675904515326"/>
+  </edge>
+  <edge label="C03090 (pp) C03838" source="33" target="34">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="0.504643913477372"/>
+    <att type="string" name="rxn" value="R04144"/>
+    <att type="string" name="rpair" value="RP03775"/>
+    <att type="string" name="gene" value="14450"/>
+    <att type="string" name="origin" value="14450"/>
+    <att type="real" name="score" value="0.986662341606303"/>
+    <att type="real" name="log2FC" value="0.986662341606303"/>
+    <att type="string" name="symbol" value="Gart"/>
+    <att type="string" name="label" value="Gart"/>
+    <att type="string" name="pathway" value="rn00230+rn01100+rn01110+rn01130"/>
+    <att type="real" name="logPval" value="-0.683902220249082"/>
+  </edge>
+  <edge label="C04188 (pp) C04582" source="35" target="36">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.67091506713072"/>
+    <att type="string" name="rxn" value="R04420"/>
+    <att type="string" name="rpair" value="RP04060"/>
+    <att type="string" name="gene" value="67873"/>
+    <att type="string" name="origin" value="67873"/>
+    <att type="real" name="score" value="-0.740638402852463"/>
+    <att type="real" name="log2FC" value="-0.740638402852463"/>
+    <att type="string" name="symbol" value="Mri1"/>
+    <att type="string" name="label" value="Mri1"/>
+    <att type="string" name="pathway" value="rn00270+rn01100"/>
+    <att type="real" name="logPval" value="0.513371420751606"/>
+  </edge>
+  <edge label="C04582 (pp) C15650" source="36" target="47">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.57224749123946"/>
+    <att type="string" name="rxn" value="R07392"/>
+    <att type="string" name="rpair" value="RP11503"/>
+    <att type="string" name="gene" value="56369"/>
+    <att type="string" name="origin" value="56369"/>
+    <att type="real" name="score" value="-0.652828333550694"/>
+    <att type="real" name="log2FC" value="-0.652828333550694"/>
+    <att type="string" name="symbol" value="Apip"/>
+    <att type="string" name="label" value="Apip"/>
+    <att type="string" name="pathway" value="rn00270+rn01100"/>
+    <att type="real" name="logPval" value="0.452506118790311"/>
+  </edge>
+  <edge label="C15606 (pp) C15650" source="37" target="47">
+    <att type="string" name="rptype" value="main"/>
+    <att type="real" name="pval" value="1.09041949034685"/>
+    <att type="string" name="rxn" value="R07395"/>
+    <att type="string" name="rpair" value="RP11967"/>
+    <att type="string" name="gene" value="67870"/>
+    <att type="string" name="origin" value="67870"/>
+    <att type="real" name="score" value="-0.124883254467284"/>
+    <att type="real" name="log2FC" value="-0.124883254467284"/>
+    <att type="string" name="symbol" value="Enoph1"/>
+    <att type="string" name="label" value="Enoph1"/>
+    <att type="string" name="pathway" value="rn00270+rn01100"/>
+    <att type="real" name="logPval" value="0.0865624757331477"/>
+  </edge>
+</graph>
+

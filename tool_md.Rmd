@@ -1,0 +1,178 @@
+---
+title: "[GAM-clustering](http://artyomovlab.wustl.edu/immgen-met/) Tutorial Notebook"
+output: html_notebook
+---
+
+### Prepearing working environment
+
+```{r}
+source("csourse.R")
+source("cutils.R")
+work.dir <- "~/Desktop/GAMclustering_results/"
+dir.create(work.dir, showWarnings = T)
+```
+
+### Data preprocessing
+
+#### Step for single-cell RNAseq data
+In case you use single-cell RNAseq data please merge individual cells into technical high resolution clusters (approx. 100 clusters with no less that 20 cells for the less populated cluster).
+
+```{r}
+library(Seurat)
+# merging
+# making ExpressionSet
+```
+
+#### Loading gene expression data
+Biobase ExpressionSet format is preferable (example of raw bulk counts processing can be found in [rawDataProcessing.R script](https://github.com/artyomovlab/ImmGenOpenSource/blob/master/rawDataProcessing.R)).
+Formal requirements to gene expression data structure are the following: 
+
+1. presence of normalised gene expression table (in case of bulk RNAseq -- filtered for the top 12,000 most expressed genes);
+2. presense of gene annotaion in Entrez ID format (if you don't have Entrez IDs in your annotation, use AnnotationDbi::mapIds() function as shown below);
+3. presense of sample annotation as colnames of your expression matrix (there is no need to collapse biological replicas as you will be able to ask method to do or not to do it during the analysis).
+
+```{r}
+# library(Biobase)
+load("~/Documents/immGen/final_objects/243_es.top12k.Rda")
+
+Biobase::fData(es.top12k)$entrez <- AnnotationDbi::mapIds(org.Mm.eg.db::org.Mm.eg.db,
+                                                          column = "ENTREZID",
+                                                          keytype = "SYMBOL",
+                                                          keys=as.character(Biobase::fData(es.top12k)$gene))
+```
+
+
+Filter genes in the dataset to keep metabolic ones only.
+
+```{r}
+#' @param gene.exprs Matrix with gene expression.
+#' @param entrezIDs Vector with gene Entrez IDs.
+#' @param organism value: choose either `mouse`, either `human`
+#' @return exprsMetab - Expression matrix with metabolic genes only
+#' @return network - Metabolic network 
+exprsMetab <- extractMetabolicGenes(gene.exprs = Biobase::exprs(es.top12k),
+                                    entrezIDs = Biobase::fData(es.top12k)$entrez,
+                                    organism = "mouse")
+exprsMetab$exprsMetab[1:3, 1:3]
+```
+
+### Get proposed parameters for the input data
+
+It can take a long time for big datasets as 64 variants of clustering are performed. If you want to skip this step for the test analysis, you can use $k = 32$ and $base = 0.4$.
+
+```{r}
+#' @param exprsMetab Expression matrix with metabolic genes only.
+#' @param work.dir Working directory where results should be saved.
+#' @return gk is the number of clusters for the initial approximation of modules.
+#' @return base is the distance to the fake pattern.
+proposedParameters <- findParameters(exprsMetab = exprsMetab$exprsMetab,
+                                     work.dir = work.dir)
+proposedParameters$gK
+proposedParameters$base
+```
+
+### Initial clustering
+
+```{r}
+#' @param es Expression matrix with metabolic genes only.
+#' @param repeats Here you may collapse biological replicas by providung vector with repeated sample names. Otherwise, just use vector with unique sample names. After calling extractMetabolicGenes() function, sample names are colnames of metabolic expression matrix. 
+#' @param entrezIDs Gene Entrez IDs. After calling extractMetabolicGenes() function, gene Entrez IDs are rownames of metabolic expression matrix.
+#' @param initialNumber The number of clusters for the initial approximation of modules. Suggested to use proposed by proposedParameters$gK value.
+#' @param organism value: choose either `mouse`, either `human`
+#' @param showInitialClustering Whether to show or not heatmap of initial clusters.
+#' @return Modified for further analysis gene expression table.
+#' @return Initial patterns.
+preCluster <- preClustering(gene.exprs = exprsMetab$exprsMetab,
+                            repeats = colnames(exprsMetab$exprsMetab),
+                            entrezIDs = rownames(exprsMetab$exprsMetab),
+                            initialNumber = 5, # replace by proposedParameters$gK after testing
+                            organism = "mouse",
+                            showInitialClustering = T)
+str(preCluster$gene.exprs)
+str(preCluster$curCenters)
+```
+
+### GAM-clustering *per se*
+
+```{r}
+#' @param gene.exprs Expression matrix with metabolic genes only produced by preClustering() function.
+#' @param repeats Here you may collapse biological replicas by providung vector with repeated sample names. Otherwise, just use vector with unique sample names.
+#' @param curCenters Initial patterns produced by preClustering() function.
+#' @param network Metabolic network from extractMetabolicGenes() function calling.
+#' @param base The distance to the fake pattern proposed by findParameters() function.
+#' @param batch.script The bash script with instructions for batch solver.
+#' @param work.dir Working directory where results should be saved.
+#' @param showIntermediateClustering Whether to show or not heatmap of intermideate clusters.
+#' @param saveSession Whether to save or not working session.
+#' @return Environment with metabolic modules and number of iterations.
+gamCluster <- gamClustering(gene.exprs = preCluster$gene.exprs,
+                            repeats = colnames(preCluster$gene.exprs),
+                            curCenters = preCluster$curCenters,
+                            network = exprsMetab$network,
+                            base = 0.4, # replace by proposedParameters$base after testing
+                            batch.script = "/home/octopus/R-studio/nclust/sgmwcs-slurm-batch-0.9.5",
+                            work.dir = work.dir,
+                            showIntermediateClustering = TRUE,
+                            saveSession = TRUE)
+# gamCluster$revs
+# gamCluster$nets
+gamCluster$curRev
+gamCluster$curRev$modules
+gamCluster$k
+session::restore.session(file=paste0(work.dir, "/session.RDa"))
+```
+
+### Visualizing gam-clustering results
+
+Get files with modules' graphs.
+
+```{r}
+#' @param curRev Metabolic modules.
+#' @param solver.paths Paths where solver files are located.
+#' @param work.dir Working directory where results should be saved.
+#' @return Results of these functions calling can be seen in work.dir (module graphs as .pdf and .xgmml files).
+getGraphs(curRev = gamCluster$curRev$modules,
+          solver.paths = "/home/octopus/R-studio/GAM_files/sgmwcs/sgmwcs-0.9.5",
+          work.dir = work.dir)
+```
+
+Get files with modules' heatmaps.
+
+```{r}
+#' @param curRev Environment with metabolic modules.
+#' @param gene.exprs Expression matrix with metabolic genes only produced by preClustering() function.
+#' @param work.dir Working directory where results should be saved.
+#' @return Results of these functions calling can be seen in work.dir (module heatmaps as .png files and all patterns common heatmap as m.centers.pdf file).
+getHeatmaps(curRev = gamCluster$curRev,
+            gene.exprs = preCluster$gene.exprs,
+            work.dir = work.dir)
+```
+
+Get files with gene tables.
+
+```{r}
+#' @param curRev Environment with metabolic modules.
+#' @param nets Metabolic graphs from gamCluster() analysis.
+#' @param gene.exprs Expression matrix with metabolic genes only produced by preClustering() function.
+#' @param work.dir Working directory where results should be saved.
+#' @param organism value: choose either `mouse`, either `human`
+#' @return m.*.genes.tsv -- module genes.
+#' @return m.*.notInModule.genes.tsv -- genes with positive score not included into module.
+#' @return m.*.complete.genes.tsv -- top 300 of all genes sorted by correlation value.
+#' @return (Results of these functions calling can be seen in work.dir.) (three .tsv files for each module with gene lists:).
+getGeneTables(curRev = gamCluster$curRev,
+              nets = gamCluster$nets,
+              gene.exprs = preCluster$gene.exprs,
+              work.dir = work.dir,
+              organism = "mouse")
+```
+
+Get files with modules' annotations by canonical pathways.
+
+```{r}
+#' @param modules The modules derived from @gamClustering function calling.
+#' @param files The files derives from @getGeneTables function calling.
+#' @param work.dir Working directory where results should be saved.
+#' @return The files with pathways...
+annotateModules(modules, files)
+```
