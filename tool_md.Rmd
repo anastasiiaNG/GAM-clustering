@@ -1,14 +1,20 @@
 ---
-title: "[GAM-clustering](http://artyomovlab.wustl.edu/immgen-met/) Tutorial Notebook"
+title: '[GAM-clustering](http://artyomovlab.wustl.edu/immgen-met/) Tutorial Notebook'
 output: html_notebook
 ---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#", echo = FALSE 
+)
+```
 
 ### Prepearing working environment
 
 ```{r}
-source("csourse.R")
-source("cutils.R")
-work.dir <- "~/Desktop/GAMclustering_results/"
+source("utils_interior.R")
+source("utils.R")
+work.dir <- "test_results"
 dir.create(work.dir, showWarnings = T)
 ```
 
@@ -19,12 +25,33 @@ In case you use single-cell RNAseq data please merge individual cells into techn
 
 ```{r}
 library(Seurat)
-# merging
-# making ExpressionSet
+load("test_data/myelSeuratObject3_DC.Rda")
+
+seurat_object # ~6,000 cells
+# Select such resolution value that will give you approx (but not less than) 20 cells inside less populated cluster
+seurat_object <- FindClusters(seurat_object, resolution = 2)
+table(Idents(seurat_object))
+DimPlot(seurat_object, reduction="umap", label = T)
+
+# Averaging cells gene expression inside technical high resolution clusters
+whole_cl <- AverageExpression(seurat_object, return.seurat = T)
+toSaveCl <- whole_cl@assays[[1]]@scale.data
+
+# Making ExpressionSet for further analysis
+library(Biobase)
+es <- ExpressionSet(as.matrix(toSaveCl))
+fData(es)$gene <- rownames(toSaveCl)
+pData(es)$sample <- colnames(toSaveCl)
+fData(es)$entrez <- AnnotationDbi::mapIds(org.Mm.eg.db::org.Mm.eg.db,
+                                          column = "ENTREZID",
+                                          keytype = "SYMBOL",
+                                          keys=as.character(rownames(es)))
+es.allGenes <- es[-which(is.na(fData(es)$entrez)), ]
+save(es.allGenes, file="test_data/es.allGenes.rda")
 ```
 
 #### Loading gene expression data
-Biobase ExpressionSet format is preferable (example of raw bulk counts processing can be found in [rawDataProcessing.R script](https://github.com/artyomovlab/ImmGenOpenSource/blob/master/rawDataProcessing.R)).
+Biobase ExpressionSet format is preferable (example of raw bulk counts processing can be found in [rawDataProcessing.R script](https://github.com/artyomovlab/ImmGenOpenSource/blob/master/rawDataProcessing.R); single cell data processing includes standart gene expression normalization by [Seurat library](https://satijalab.org/seurat/v3.0/pbmc3k_tutorial.html) and some additional steps described in the previous chunk).
 Formal requirements to gene expression data structure are the following: 
 
 1. presence of normalised gene expression table (in case of bulk RNAseq -- filtered for the top 12,000 most expressed genes);
