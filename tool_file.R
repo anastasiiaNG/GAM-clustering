@@ -4,6 +4,7 @@
 source("csourse.R")
 source("cutils.R")
 work.dir <- "~/Desktop/"
+work.dir <- "~/R-studio/GAM-clustering/test_results/"
 dir.create(work.dir, showWarnings = F)
 
 

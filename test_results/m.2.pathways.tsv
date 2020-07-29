@@ -1,0 +1,36 @@
+PATHID	pval	k	K	padj	PATHNAME	genes
+R-MMU-8956320	1.05208844456965e-16	8	15	1.31931890949034e-13	Nucleobase biosynthesis	Paics Adsl Gart Umps Cad Ppat Atic Dhodh
+mmu00270	2.0716806229072e-15	10	52	1.29894375056281e-12	Cysteine and methionine metabolism	Adi1 Psat1 Ldha Mdh1 Phgdh Ahcy Apip Mtap Enoph1 Mri1
+R-MMU-15869	3.14904661596026e-15	11	79	1.31630148547139e-12	Metabolism of nucleotides	Paics Adsl Gart Umps Nudt5 Tyms Cad Ppat Atic Dhodh Ctps
+R-MMU-71291	3.27642478551022e-13	12	161	1.02715917025745e-10	Metabolism of amino acids and derivatives	Oat Gatm Dld Enoph1 Aldh18a1 Psat1 Mri1 Mtap Adi1 Psph Ahcy Phgdh
+mmu00670	4.4633584607711e-11	6	19	1.11941030196139e-08	One carbon pool by folate	Shmt2 Atic Mthfd1 Dhfr Gart Tyms
+mmu00260	9.20710155003998e-11	7	40	1.92428422395836e-08	Glycine, serine and threonine metabolism	Psph Psat1 Shmt2 Dld Pgam1 Phgdh Gatm
+R-MMU-73817	4.07330776057594e-10	5	12	6.38490991470279e-08	Purine ribonucleoside monophosphate biosynthesis	Paics Adsl Gart Ppat Atic
+mmu_M00034	4.07330776057594e-10	5	12	6.38490991470279e-08	Methionine salvage pathway	Mtap Mri1 Apip Enoph1 Adi1
+mmu01523	9.47997584758774e-10	6	30	1.32087663476389e-07	Antifolate resistance	Shmt2 Atic Dhfr Fpgs Gart Tyms
+R-MMU-1614635	1.53194316157236e-09	5	15	1.92105672461174e-07	Sulfur amino acid metabolism	Enoph1 Mri1 Mtap Adi1 Ahcy
+mmu00020	9.80993985874172e-08	5	32	1.11833314389656e-05	Citrate cycle (TCA cycle)	Dld Fh1 Mdh1 Pcx Idh3a
+mmu00010	1.19894342280002e-07	6	65	1.25289587682602e-05	Glycolysis / Gluconeogenesis	Adh5 Dld Gapdh Ldha Pgam1 Pgk1
+mmu00620	2.40571314006952e-07	5	38	2.32058790588244e-05	Pyruvate metabolism	Dld Fh1 Ldha Mdh1 Pcx
+R-MMU-196757	2.77076991857121e-07	4	16	2.48181819849164e-05	Metabolism of folate and pterines	Shmt2 Mthfd1 Fpgs Dhfr
+mmu00230	5.55660139002271e-07	7	136	4.64531876205899e-05	Purine metabolism	Atic Adsl Gart Prps1 Ppat Nudt5 Paics
+mmu_M00009	1.58352388575489e-06	4	24	0.00012410868454604	Citrate cycle (TCA cycle, Krebs cycle)	Idh3a Dld Fh1 Mdh1
+R-MMU-70263	1.88012306285918e-06	4	25	0.000138686724754436	Gluconeogenesis	Mdh1 Gapdh Pgk1 Pgam1
+mmu00240	2.08016544015514e-06	5	58	0.000144918192330808	Pyrimidine metabolism	Tyms Umps Ctps Dhodh Cad
+mmu_M00002	1.282214565759e-05	3	13	0.000846261613400942	Glycolysis, core module involving three-carbon compounds	Gapdh Pgk1 Pgam1
+mmu_M00011	1.62773103982742e-05	3	14	0.00102058736197179	Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate	Dld Fh1 Mdh1
+R-MMU-71406	1.91790259392663e-05	4	44	0.00114526183465905	Pyruvate metabolism and Citric Acid (TCA) cycle	Ldha Fh1 Dld Idh3a
+mmu_M00003	4.27798997187763e-05	3	19	0.00243845428397025	Gluconeogenesis, oxaloacetate => fructose-6P	Pgam1 Pgk1 Gapdh
+R-MMU-71403	5.0200511049265e-05	3	20	0.00273701916764254	Citric acid cycle (TCA cycle)	Fh1 Dld Idh3a
+R-MMU-70326	0.000114265434078009	4	69	0.00597036893057595	Glucose metabolism	Mdh1 Gapdh Pgk1 Pgam1
+mmu_M00001	0.000126515467312	3	27	0.00634601584036992	Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate	Gapdh Pgk1 Pgam1
+mmu00630	0.000192442603045688	3	31	0.00928165477766512	Glyoxylate and dicarboxylate metabolism	Shmt2 Dld Mdh1
+R-MMU-196849	0.000347385197681291	4	92	0.0158880786107019	Metabolism of water-soluble vitamins and cofactors	Shmt2 Mthfd1 Fpgs Dhfr
+mmu00250	0.000354757736124125	3	38	0.0158880786107019	Alanine, aspartate and glutamate metabolism	Adsl Ppat Cad
+R-MMU-8964539	0.000580358356608411	2	10	0.0250954958340327	Glutamate and glutamine metabolism	Oat Aldh18a1
+mmu_M00532	0.000707674563643059	2	11	0.0295807967602799	Photorespiration	Shmt2 Dld
+R-MMU-71387	0.000731799353635939	5	197	0.0296024641761119	Metabolism of carbohydrates	Mdh1 Gapdh Pgk1 Prps1 Pgam1
+R-MMU-1428517	0.000782474739589289	4	114	0.0306632288576553	The citric acid (TCA) cycle and respiratory electron transport	Ldha Fh1 Dld Idh3a
+mmu00330	0.000948091770147792	3	53	0.0360274872656161	Arginine and proline metabolism	Oat Aldh18a1 Gatm
+R-MMU-196854	0.00103942628187056	4	123	0.0378482526255627	Metabolism of vitamins and cofactors	Shmt2 Mthfd1 Fpgs Dhfr
+R-MMU-70171	0.00105637068731634	3	55	0.0378482526255627	Glycolysis	Gapdh Pgk1 Pgam1

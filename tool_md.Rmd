@@ -60,7 +60,9 @@ Formal requirements to gene expression data structure are the following:
 
 ```{r}
 # library(Biobase)
-load("~/Documents/immGen/final_objects/243_es.top12k.Rda")
+load("test_data/243_es.top12k.Rda") # bulk RNAseq data
+# OR
+load("test_data/es.allGenes.rda") # single cell RNAseq data
 
 Biobase::fData(es.top12k)$entrez <- AnnotationDbi::mapIds(org.Mm.eg.db::org.Mm.eg.db,
                                                           column = "ENTREZID",
@@ -194,12 +196,14 @@ getGeneTables(curRev = gamCluster$curRev,
               organism = "mouse")
 ```
 
-Get files with modules' annotations by canonical pathways.
+Get files with modules' annotations by canonical KEGG and Reactome metabolic pathways.
 
 ```{r}
-#' @param modules The modules derived from @gamClustering function calling.
-#' @param files The files derives from @getGeneTables function calling.
-#' @param work.dir Working directory where results should be saved.
-#' @return The files with pathways...
-annotateModules(modules, files)
+#' @param universe All dataset genes' Entrez IDs.
+#' @param work.dir Working directory where files with module genes are (results will be saved here as well).
+#' @param organism value: choose either `mouse`, either `human`
+#' @return The files with KEGG and Reactome metabolic pathways annotating obtained modules.
+annotateModules(universe = Biobase::fData(es.top12k)$entrez,
+                work.dir = work.dir,
+                organism = "mouse")
 ```

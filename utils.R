@@ -471,27 +471,22 @@ getGeneTables <- function(curRev = gamCluster$curRev,
 
 
 
-annotateModules <-function(universe = Biobase::fData(es.top12k)$entrez,
-                           work.dir = work.dir,
-                           organism = "mouse"){
+annotateModules <- function(universe = Biobase::fData(es.top12k)$entrez,
+                            work.dir = work.dir,
+                            organism = "mouse"){
 
   m_files <- list.files(work.dir, "m\\.[0-9]+\\.genes\\.tsv", full.names = T)
   m_filenames <- list.files(work.dir, "m\\.[0-9]+\\.genes\\.tsv")
   if(length(m_files) == 0){
     print("Use `annotateModules()` after `getGeneTables()` only")}
 
-  # str(reactome.db::reactome.db)
   reactomepath <- na.omit(AnnotationDbi::select(reactome.db::reactome.db, universe, "PATHID", "ENTREZID"))
   reactomepath <- split(reactomepath$ENTREZID, reactomepath$PATHID)
-  # head(reactomepath)
 
   keggmodule <- KEGGREST::keggLink("mmu", "module")
   keggmodule <- gsub("mmu:", "", keggmodule)
   names(keggmodule) <- gsub("md:", "", names(keggmodule))
   keggmodule <- split(keggmodule, names(keggmodule))
-  # head(keggmodule)
-  # keggmodule <- lapply(listoflists, unname)
-  # View(keggmodule)
 
   # keggmdnames <- KEGGREST::keggList("module", "mmu") # 404 after September, 2019
   keggmdnames <- KEGGREST::keggList("module")
@@ -499,36 +494,30 @@ annotateModules <-function(universe = Biobase::fData(es.top12k)$entrez,
   keggmd2name$rn <- gsub("md:", "", keggmd2name$rn)
   data.table::setnames(keggmd2name, c("rn","keggmdnames"), c("PATHID","PATHNAME"))
   keggmd2name$PATHID <- paste0("mmu_", keggmd2name$PATHID)
-  # head(keggmd2name)
 
   keggpathway <- KEGGREST::keggLink("mmu", "pathway")
   keggpathway <- gsub("mmu:", "", keggpathway)
   names(keggpathway) <- gsub("path:", "", names(keggpathway))
   keggpathway <- split(keggpathway, names(keggpathway))
   keggpathway <- lapply(keggpathway, unname)
-  # head(keggpathway)
   keggpathnames <- KEGGREST::keggList("pathway", "mmu")
-  # head(keggpathnames)
 
   keggpath2name <- data.table::as.data.table(keggpathnames, keep.rownames=T)
   keggpath2name$rn <- gsub("path:", "", keggpath2name$rn)
-  keggpath2name$keggpathnames <- gsub(" - Mus musculus \\(mouse\\)", "",
-                                      keggpath2name$keggpathnames)
+  keggpath2name$keggpathnames <- gsub(" - Mus musculus \\(mouse\\)", "", keggpath2name$keggpathnames)
   data.table::setnames(keggpath2name, c("rn","keggpathnames"), c("PATHID","PATHNAME"))
-  # head(keggpath2name)
 
   reactomepathway2name <- data.table::as.data.table(na.omit(
     AnnotationDbi::select(reactome.db::reactome.db,
                           names(reactomepath),
                           c("PATHNAME"), 'PATHID')))
   reactomepathway2name[, PATHNAME := sub("^[^:]*: ", "", PATHNAME)] # Remove organism prefix
-  # head(reactomepathway2name)
 
   # combine kegg modules and pathways with reactome data
   pathways <- c(reactomepath, keggmodule, keggpathway)
   pathways <- pathways[sapply(pathways, length) >= 10]
 
-  pathways$`5991024` <- NULL
+  pathways$`5991024` <- NULL # Metabolic pathways
   pathways$`R-MMU-1430728` <- NULL # Metabolism
   pathways$`mmu01100` <- NULL # Metabolic pathways
   pathways$`mmu01200` <- NULL # Carbon metabolism
@@ -539,12 +528,14 @@ annotateModules <-function(universe = Biobase::fData(es.top12k)$entrez,
                                         keggmd2name,
                                         keggpath2name))
 
+  # ------------------------------------------------------------------
   # pathway2name <- do.call("rbind", list(reactomepathway2name, keggpath2name))
 
   # fgseaResMain <- fgseaRes[match(mainPathways, pathway)]
   # fgseaResMain[, leadingEdge := lapply(leadingEdge, mapIds, x=org.Mm.eg.db,
   #                                      keytype="ENTREZID", column="SYMBOL")]
   # fwrite(fgseaResMain, file="fgseaResMain.txt", sep="\t", sep2=c("", " ", ""))
+  # ------------------------------------------------------------------
 
   gseaReactome <- function(genes) {
     overlaps <- data.frame(
@@ -599,7 +590,7 @@ annotateModules <-function(universe = Biobase::fData(es.top12k)$entrez,
     for(a in seq_along(new_pz)){
       out[a, 7] <- paste(new_pz[[a]], collapse=" ")}
 
-    write.tsv(out, file=sprintf("%s/m.%s.pathways_mod.tsv", work.dir, name))
+    rUtils::write.tsv(out, file=sprintf("%s/m.%s.pathways.tsv", work.dir, name))
     print(basename(m_files[i]))
   }
 }
